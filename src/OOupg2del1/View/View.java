@@ -1,12 +1,13 @@
 package OOupg2del1.View;
 
+
 import OOupg2del1.Controller.Controller;
 
 import java.util.Scanner;
 
 public class View {
     public View() {
-        Controller controller = new Controller();
+        Controller controller = new Controller(this);
         Scanner sc = new Scanner(System.in);
         while (true) {
             String input;
@@ -32,5 +33,8 @@ public class View {
             }
         }
 
+    }
+    public void printMessage(String msg) {
+        System.out.println(msg);
     }
 }

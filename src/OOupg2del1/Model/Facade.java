@@ -9,7 +9,7 @@ public class Facade implements ISubject{
     Salong salong;
     private List<IObersver> observers;
 
-   public Facade() {
+    public Facade() {
         observers = new ArrayList<>();
     }
 
